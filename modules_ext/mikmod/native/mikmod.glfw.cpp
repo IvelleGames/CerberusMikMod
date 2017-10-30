@@ -42,8 +42,10 @@ void cxMikmod_Play(String path) {
 		cxMikmod_Stop();
 	
 		char file[path.Length()];
-		std::wcstombs(file, path.Data(), path.Length());
-	
+		size_t ret = std::wcstombs(file, path.Data(), path.Length());
+		
+		if (ret==path.Length()) file[path.Length()]='\0';
+		
 		mikModModule = Player_Load( file , 64, 0);
 
 		if (mikModModule) {
