@@ -1,5 +1,5 @@
 # CerberusMikMod
-MikMod integration for Cerberus-X (GLFW target) https://www.cerberus-x.com
+MikMod/OpenMPT integration for Cerberus-X (GLFW/HTML5 targets) https://www.cerberus-x.com
 
 # Test
 
